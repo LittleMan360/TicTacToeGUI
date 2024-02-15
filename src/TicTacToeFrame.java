@@ -23,7 +23,6 @@ public class TicTacToeFrame
     int XWins = 0;
     int OWins = 0;
     int Ties = 0;
-    String letter = "";
 
     boolean GameOver = false;
     int turns = 0;
@@ -226,9 +225,7 @@ public class TicTacToeFrame
 
 
         newGame.addActionListener(e -> newGame());
-        score.addActionListener((ActionEvent ae) -> {
-            JOptionPane.showMessageDialog(null, "Player X's number of Wins" + " " + XWins + " \nPlayer O's number of Wins" + " " + OWins + "\nTies" + " " + Ties);
-        });
+        score.addActionListener((ActionEvent ae) -> JOptionPane.showMessageDialog(null, "Player X's number of Wins" + " " + XWins + " \nPlayer O's number of Wins" + " " + OWins + "\nTies" + " " + Ties));
 
 
         controlPnl.add(newGame);
