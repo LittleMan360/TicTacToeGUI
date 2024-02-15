@@ -1,5 +1,5 @@
 import java.awt.*;
-import java.awt.event.*;
+import java.util.Objects;
 import javax.swing.*;
 
 public class TicTacToeFrame
@@ -65,22 +65,18 @@ public class TicTacToeFrame
                 //tested to make sure text was here
                 //tile.setText(currentPlayer);
 
-                tile.addActionListener(new ActionListener()
-                {
-                    public void actionPerformed(ActionEvent e)
+                tile.addActionListener(e -> {
+                    if (GameOver) return;
+                    JButton tile1 = (JButton) e.getSource();
+                    if (Objects.equals(tile1.getText(), ""))
                     {
-                        if (GameOver) return;
-                        JButton clickedTile = (JButton)e.getSource();
-                        if (tile.getText() =="")
+                        tile1.setText(currentPlayer);
+                        turns++;
+                        checkWin();
+                        if (!GameOver)
                         {
-                            tile.setText(currentPlayer);
-                            turns++;
-                            checkWin();
-                            if (!GameOver)
-                            {
-                            currentPlayer = (currentPlayer.equals(playerX)) ? playerO : playerX;
-                            textLabel.setText(currentPlayer + " Turn");
-                            }
+                        currentPlayer = (currentPlayer.equals(playerX)) ? playerO : playerX;
+                        textLabel.setText(currentPlayer + " Turn");
                         }
                     }
                 });
