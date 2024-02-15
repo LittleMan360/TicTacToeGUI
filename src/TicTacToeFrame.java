@@ -218,7 +218,11 @@ public class TicTacToeFrame
         controlPnl.setBackground(Color.BLACK);
 
         JButton newGame = new JButton("New Game");
+        newGame.setBackground(Color.BLACK);
+        newGame.setForeground(Color.WHITE);
         JButton score = new JButton("Score");
+        score.setBackground(Color.BLACK);
+        score.setForeground(Color.WHITE);
 
 
         newGame.addActionListener(e -> newGame());
