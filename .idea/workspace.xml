@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48c3bf6-b044-4ca8-8d52-a40553b41614" name="Changes" comment="" />
+    <list default="true" id="d48c3bf6-b044-4ca8-8d52-a40553b41614" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707965186175</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed jbutton colors to black background white text just looks better">
+      <created>1707965447498</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707965447498</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Cleaning up code getting warnings/errors away">
+      <created>1707965501430</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707965501430</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,6 +132,8 @@
     <MESSAGE value="fixed red text accidentally only made one column red" />
     <MESSAGE value="Cleaning up code" />
     <MESSAGE value="Created control panel for new game and made score tracker on another panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created control panel for new game and made score tracker on another panel" />
+    <MESSAGE value="changed jbutton colors to black background white text just looks better" />
+    <MESSAGE value="Cleaning up code getting warnings/errors away" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning up code getting warnings/errors away" />
   </component>
 </project>
