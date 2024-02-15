@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48c3bf6-b044-4ca8-8d52-a40553b41614" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToeFrame.java" afterDir="false" />
-    </list>
+    <list default="true" id="d48c3bf6-b044-4ca8-8d52-a40553b41614" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,11 +79,19 @@
       <option name="project" value="LOCAL" />
       <updated>1707959712169</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created the Game and made it so text of winner switches to green red if tie">
+      <created>1707963803762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707963803762</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made the Runner Program and started making the Frame gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="made the Runner Program and started making the Frame gui" />
+    <MESSAGE value="Created the Game and made it so text of winner switches to green red if tie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Game and made it so text of winner switches to green red if tie" />
   </component>
 </project>
