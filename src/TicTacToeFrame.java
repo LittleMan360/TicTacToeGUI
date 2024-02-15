@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.util.Objects;
 import javax.swing.*;
+import java.awt.event.*;
 
 public class TicTacToeFrame
 {
@@ -12,11 +13,17 @@ public class TicTacToeFrame
 
     JPanel boardPanel = new JPanel();
 
+    JPanel controlPnl = new JPanel();
 
     JButton[][] board = new JButton[3][3];
     String playerX = "X";
     String playerO = "O";
     String currentPlayer = playerX;
+
+    int XWins = 0;
+    int OWins = 0;
+    int Ties = 0;
+    String letter = "";
 
     boolean GameOver = false;
     int turns = 0;
@@ -28,7 +35,6 @@ public class TicTacToeFrame
         frame.setVisible(true);
         frame.setSize(boardWidth, boardHeight);
         frame.setLocationRelativeTo(null);
-        frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
@@ -47,7 +53,10 @@ public class TicTacToeFrame
         boardPanel.setBackground(Color.WHITE);
         frame.add(boardPanel);
 
-
+        createControlPanel();
+        frame.add(controlPnl, BorderLayout.SOUTH);
+        controlPnl.setBackground(Color.BLACK);
+        controlPnl.setForeground(Color.WHITE);
 
         for(int row = 0; row < 3; row++)
         {
@@ -97,6 +106,14 @@ public class TicTacToeFrame
                     setWin(board [row][i]);
                 }
                 textLabel.setText(currentPlayer + " Wins!");
+                if (currentPlayer.equals(playerX))
+                {
+                    XWins++;
+                }
+                else
+                {
+                    OWins++;
+                }
                 GameOver = true;
             }
         }
@@ -112,6 +129,14 @@ public class TicTacToeFrame
                     setWin(board[i][col]);
                 }
                 textLabel.setText(currentPlayer + " Wins!");
+                if (currentPlayer.equals(playerX))
+                {
+                    XWins++;
+                }
+                else
+                {
+                    OWins++;
+                }
                 GameOver = true;
             }
         }
@@ -126,6 +151,14 @@ public class TicTacToeFrame
             setWin(board[2][2]);
 
             textLabel.setText(currentPlayer + " Wins!");
+            if (currentPlayer.equals(playerX))
+            {
+                XWins++;
+            }
+            else
+            {
+                OWins++;
+            }
             GameOver = true;
         }
         //diagonal top right bottom left diagonal
@@ -138,6 +171,14 @@ public class TicTacToeFrame
             setWin(board[2][0]);
 
             textLabel.setText(currentPlayer + " Wins!");
+            if (currentPlayer.equals(playerX))
+            {
+                XWins++;
+            }
+            else
+            {
+                OWins++;
+            }
             GameOver = true;
         }
 
@@ -150,6 +191,7 @@ public class TicTacToeFrame
                     setTie(board[row][col]);
                 }
             }
+            Ties++;
             GameOver = true;
         }
 
@@ -170,6 +212,42 @@ public class TicTacToeFrame
         textLabel.setText("Tie");
     }
 
+    void createControlPanel()
+    {
+        controlPnl.setLayout(new GridLayout(1, 3));
+        controlPnl.setBackground(Color.BLACK);
+
+        JButton newGame = new JButton("New Game");
+        JButton score = new JButton("Score");
+
+
+        newGame.addActionListener(e -> newGame());
+        score.addActionListener((ActionEvent ae) -> {
+            JOptionPane.showMessageDialog(null, "Player X's number of Wins" + " " + XWins + " \nPlayer O's number of Wins" + " " + OWins + "\nTies" + " " + Ties);
+        });
+
+
+        controlPnl.add(newGame);
+        controlPnl.add(score);
+
+    }
+
+    private void newGame()
+    {
+        for(int row = 0; row < 3; row++)
+        {
+            for(int col = 0; col < 3; col++)
+            {
+                board[row][col].setText("");
+                board[row][col].setBackground(Color.GRAY);
+                board[row][col].setForeground(Color.WHITE);
+                GameOver = false;
+                currentPlayer = playerX;
+                textLabel.setText(currentPlayer + " Turn");
+                turns = 0;
+            }
+        }
+    }
 
 
 }

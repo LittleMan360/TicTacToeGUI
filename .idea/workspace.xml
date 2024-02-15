@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d48c3bf6-b044-4ca8-8d52-a40553b41614" name="Changes" comment="" />
+    <list default="true" id="d48c3bf6-b044-4ca8-8d52-a40553b41614" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToeFrame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,12 +89,28 @@
       <option name="project" value="LOCAL" />
       <updated>1707963803762</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed red text accidentally only made one column red">
+      <created>1707963903018</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707963903018</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Cleaning up code">
+      <created>1707964094937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707964094937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made the Runner Program and started making the Frame gui" />
     <MESSAGE value="Created the Game and made it so text of winner switches to green red if tie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Game and made it so text of winner switches to green red if tie" />
+    <MESSAGE value="fixed red text accidentally only made one column red" />
+    <MESSAGE value="Cleaning up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning up code" />
   </component>
 </project>
